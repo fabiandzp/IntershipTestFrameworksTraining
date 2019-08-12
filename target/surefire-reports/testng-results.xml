@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Simple Framework Suite" duration-ms="5281" started-at="2019-08-12T21:30:28Z" finished-at="2019-08-12T21:30:34Z">
+    <groups>
+    </groups>
+    <test name="RestAssured Test" duration-ms="5281" started-at="2019-08-12T21:30:28Z" finished-at="2019-08-12T21:30:34Z">
+      <class name="com.testing.statuses.SimpleFramework">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.testing.statuses.SimpleFramework@56f4468b]" name="setup" is-config="true" duration-ms="744" started-at="2019-08-12T21:30:28Z" finished-at="2019-08-12T21:30:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="postTweet()[pri:0, instance:com.testing.statuses.SimpleFramework@56f4468b]" name="postTweet" duration-ms="3690" started-at="2019-08-12T21:30:29Z" finished-at="2019-08-12T21:30:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTweet -->
+        <test-method status="PASS" signature="readTweet()[pri:0, instance:com.testing.statuses.SimpleFramework@56f4468b]" name="readTweet" duration-ms="427" started-at="2019-08-12T21:30:33Z" depends-on-methods="com.testing.statuses.SimpleFramework.postTweet" finished-at="2019-08-12T21:30:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- readTweet -->
+        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:com.testing.statuses.SimpleFramework@56f4468b]" name="deleteTweet" duration-ms="384" started-at="2019-08-12T21:30:33Z" depends-on-methods="com.testing.statuses.SimpleFramework.readTweet" finished-at="2019-08-12T21:30:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- com.testing.statuses.SimpleFramework -->
+    </test> <!-- RestAssured Test -->
+  </suite> <!-- Simple Framework Suite -->
+</testng-results>
